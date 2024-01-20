@@ -1,0 +1,48 @@
+a, button {
+    cursor: pointer;
+}
+@media (hover: hover) {
+    .logo-link:hover{
+        transform: scale(0.9);
+    }
+    .header__menu-link:hover {
+        color: #CDA274;
+    }
+    .header__menu-link:active {
+        color: #292F36;
+    }
+    .header__btn:hover {
+        background: #CDA274;
+    }
+
+    .header__btn:hover .header__elem {
+        background: url(../../img/next-hover.svg);
+        background-size: cover;
+    }
+    .product__item-info_link:hover circle {
+        fill:white;
+    }
+    .news__info-item:hover {
+        background: #F4F0EC;
+    }
+    .news__info-item:hover circle {
+        fill:white;
+    }
+    .news__paginat-link svg:hover {
+        fill: #F4F0EC;
+        stroke: none;
+    }
+    .news__paginat-link circle:hover {
+        stroke: none;
+    }
+    .tags__button:hover {
+        background: #292F36;
+        color: #ffff;
+    }
+    .footer__menu-link:hover, .footer__contact-link:hover {
+        color: #CDA274;
+    }
+    .footer__social-link:hover svg{
+        transform: scale(1.2);
+    }
+}

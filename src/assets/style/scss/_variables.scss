@@ -1,0 +1,36 @@
+%main-title {
+  color: #292F36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62.5px;
+  letter-spacing: 1px;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @mixin flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @mixin backgroundCenterCover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @mixin backgroundCenterContain {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }

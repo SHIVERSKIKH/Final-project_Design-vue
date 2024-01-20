@@ -1,0 +1,188 @@
+@import "../css/hover.css";
+@import "../css/normalize.css";
+@import "../css/nulling-styles.css";
+@import "_variables.scss";
+@import "_homePages";
+@import "_blogPages";
+@import "_blogDetails";
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #4D5053;
+}
+.center {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.header {
+    padding: 44px 0 96px 0;
+    &__top {
+        margin: 0 0 45px 0;
+        @include flexSpaceBetween;
+    }
+    &__menu {
+        max-width: 243px;
+        width: 100%;
+    }
+    &__menu-list {
+        @include flexSpaceBetween;
+    }
+    &__menu-link {
+        color: #292F36;
+        font-size: 20px;
+        line-height:25px;
+    }
+    &__promo {
+        background: url(../../img/header-img.jpg);
+        @include backgroundCenterCover;
+        border-radius: 50px;
+    }
+    &__promo-wrp {
+        padding: 208px 0 208px 52px;
+    }
+    &__promo-title{
+        max-width: 434px;
+        width: 100%;
+        min-height: 162px;
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 81.25px;
+        margin: 0 0 18px 0;
+    }
+    &__promo-txt {
+        max-width: 433px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        margin: 0 0 21px 0;
+    }
+    &__btn {
+        max-width: 220px;
+        width: 100%;
+        height: 75px;
+        @include flexCenter;
+        border-radius: 18px;
+        background: #292F36;
+        box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.5px;
+        letter-spacing: 0.36px;
+    }
+    &__elem {
+        width: 15px;
+        height: 13px;
+        background: url(../../img/next.svg);
+        @include backgroundCenterContain;
+        margin-left: 10px;
+    }
+}
+.logo{
+    width: 177px;
+    height: 50px;
+}
+.logo-link {
+    display: block;
+    width: 177px;
+    height: 50px;
+    background: url(../../img/Logo.png);
+    @include backgroundCenterContain;
+}
+
+.footer {
+    padding:0  0 134px 0;
+    &__wrp {
+        min-height: 272px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 393px;
+        width: 100%;
+    }
+    &__info-txt {
+        max-width: 393px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        margin: 0 0 31px 0;
+    }
+    &__social {
+        max-width: 225px;
+        width: 100%;
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+    }
+    &__menu {
+        max-width: 125px;
+        width: 100%;
+        min-height: 238px;
+    }
+    &__menu-list {
+        max-width: 125px;
+        width: 100%;
+        min-height: 238px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__menu-title {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.25px;
+    }
+    &__menu-link {
+        color: #4D5053;
+        font-size: 22px;
+        line-height: 66px;
+        letter-spacing: 0.22px;
+    }
+    &__contact {
+        max-width: 258px;
+        width: 100%;
+        min-height: 272px;
+    }
+    &__contact-list {
+        max-width: 258px;
+        width: 100%;
+        min-height: 272px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__contact-title {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.25px;
+    }
+    &__contact-link {
+        color: #4D5053;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+    }
+}
+.logo-footer {
+    margin: 0 0 18px 0;
+}

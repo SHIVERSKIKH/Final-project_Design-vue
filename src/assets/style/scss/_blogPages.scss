@@ -1,0 +1,127 @@
+.blog {
+    padding: 178px 0 0 ;
+    background: url(@/assets/img/blog.jpg);
+    @include backgroundCenterCover;
+    &__info {
+        display: flex;
+        justify-content: center;
+    }
+    &__info-wrp {
+        padding: 41px 78px;
+        max-width: 503px;
+        width: 100%;
+        min-height: 178px;
+        border-radius: 37px 37px 0px 0px;
+        background: #FFF;
+    }
+    &__info-title {
+        @extend %main-title;
+        letter-spacing: 0;
+    }
+    &__info-txt {
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        text-align: center;
+    } 
+}
+.post {
+    padding: 104px 0 150px 0;
+    &__title {
+        @extend %main-title;
+        text-align: left;
+        margin: 0 0 27px 0;
+    }
+    &__article {
+        max-width: 1201px;
+        width: 100%;
+        min-height: 522px;
+        padding: 22px;
+        border-radius: 62px;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+        @include flexSpaceBetween; 
+    }
+    &__info {
+        max-width: 489px;
+        width: 100%;
+        min-height: 375px;
+    }
+    &__info-title {
+        max-width: 463px;
+        width: 100%;
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31.25px;
+        letter-spacing: 0.5px;
+        margin: 0 0 22px 0;
+    }
+    &__info-txt {
+        max-width: 469px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+    }
+    &__info > p:nth-child(2) {
+        margin: 0 0 38px 0;
+    }
+    &__info > p:nth-child(3) {
+        margin: 0 0 41px 0;
+    }
+    &__info-btn {
+        max-width: 489px;
+        width: 100%;
+        @include flexSpaceBetween; 
+    }
+    &__info-text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+    }
+    &__info-link{
+        display: block;
+        width: 52px;
+        height: 52px;
+        background: url(@/assets/img/product-btn.png);
+        @include backgroundCenterContain;
+    }
+}
+.news {
+    &__wrp {
+        max-width: 1201px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        margin: 0 0 51px 0;
+        column-gap: 28px;
+    }
+    &__paginat {
+        width: 268px;
+        height: 52px;
+        margin: 0 auto 200px;
+    }
+    &__paginat-list {
+        width: 268px;
+        height: 52px;
+        @include flexSpaceBetween;
+    }
+    &__paginat-link {
+        width: 53px;
+        height: 52px;
+        background: none;
+    }
+
+}
+.title-blog {
+    margin: 0 0 30px 0;
+    text-align: left;
+}
+.active_tabs {
+    background: #292F36!important;
+    color: #ffff;
+}
