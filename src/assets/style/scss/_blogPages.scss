@@ -72,6 +72,7 @@
         margin: 0 0 41px 0;
     }
     &__info-btn {
+        display: block;
         max-width: 489px;
         width: 100%;
         @include flexSpaceBetween; 
@@ -103,7 +104,7 @@
     &__paginat {
         width: 268px;
         height: 52px;
-        margin: 0 auto 200px;
+        margin: 0 auto 104px;
     }
     &__paginat-list {
         width: 268px;

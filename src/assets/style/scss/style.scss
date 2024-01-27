@@ -21,9 +21,8 @@ body {
     margin: 0 auto;
 }
 .header {
-    padding: 44px 0 96px 0;
+    padding: 44px 0 57px 0;
     &__top {
-        margin: 0 0 45px 0;
         @include flexSpaceBetween;
     }
     &__menu {

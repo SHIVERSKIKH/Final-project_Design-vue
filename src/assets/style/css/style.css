@@ -273,6 +273,7 @@
   margin: 0 0 41px 0;
 }
 .post__info-btn {
+  display: block;
   max-width: 489px;
   width: 100%;
   display: flex;
@@ -308,7 +309,7 @@
 .news__paginat {
   width: 268px;
   height: 52px;
-  margin: 0 auto 200px;
+  margin: 0 auto 104px;
 }
 .news__paginat-list {
   width: 268px;
@@ -532,10 +533,9 @@ body {
 }
 
 .header {
-  padding: 44px 0 96px 0;
+  padding: 44px 0 57px 0;
 }
 .header__top {
-  margin: 0 0 45px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
