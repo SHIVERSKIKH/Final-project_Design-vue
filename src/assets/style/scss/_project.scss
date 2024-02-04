@@ -1,0 +1,107 @@
+.project {
+    padding: 178px 0 0 ;
+    background: url(@/assets/img/project.jpg);
+    @include backgroundCenterCover;
+    &__info {
+        display: flex;
+        justify-content: center;
+    }
+    &__info-wrp {
+        padding: 41px 78px;
+        max-width: 503px;
+        width: 100%;
+        min-height: 178px;
+        border-radius: 37px 37px 0px 0px;
+        background: #FFF;
+    }
+    &__info-title {
+        @extend %main-title;
+        letter-spacing: 0;
+    }
+    &__info-txt {
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        text-align: center;
+    } 
+}
+.info {
+    padding:200px 0 96px;
+    &__tags {
+        @include flexSpaceBetween;
+        max-width: 880px;
+        width: 100%;
+        min-height: 75px;
+        box-sizing: border-box;
+        border: 1px solid rgb(205, 162, 116);
+        border-radius: 18px;
+        margin: 0 auto 61px;
+    }
+    &__tags-btn {
+        color: rgb(41, 47, 54);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: 2%;
+        background: none;
+        @include flexCenter;
+        width: 219px;
+        height: 75px;
+    }
+    &__advantages-wrapper {
+        column-count: 2;
+        margin: 0 0 61px 0;
+    }
+    &__advantages-item {
+        max-width: 586px;
+        width: 100%;
+        max-height: 947px;
+        margin: 0 0 35px 0;
+    }
+    &__advantages-images {
+        max-width: 586px;
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+    &__images:nth-child(1), &__images:nth-child(3), &__images:nth-child(5) {
+        max-width: 586px;
+        width: 100%;
+        max-height: 853px;
+    }
+    &__images:nth-child(2), &__images:nth-child(4), &__images:nth-child(6), &__images:nth-child(7),&__images:nth-child(8) {
+        max-width: 586px;
+        width: 100%;
+        max-height: 522px;
+    }
+    &__advantages-wrp {
+        @include flexSpaceBetween;
+        max-width: 586px;
+        width: 100%;
+        min-height: 70px;
+    }
+    &__advantages-wrp_title {
+        color: rgb(41, 47, 54);
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 2%;
+        text-align: left;
+        margin: 0 0 4px 0;
+    }
+    &__advantages-wrp_txt {
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+    
+}
+.active_btn{
+    width: 219px;
+    height: 75px;
+    border-radius: 18px;
+    background: rgb(205, 162, 116);
+    @include flexCenter;
+    color: rgb(255, 255, 255);
+}

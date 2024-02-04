@@ -101,23 +101,22 @@
         margin: 0 0 51px 0;
         column-gap: 28px;
     }
-    &__paginat {
+}
+    .paginat {
         width: 268px;
         height: 52px;
         margin: 0 auto 104px;
+        &__list {
+            width: 268px;
+            height: 52px;
+            @include flexSpaceBetween;
+        }
+        &__link {
+            width: 53px;
+            height: 52px;
+            background: none;
+        }
     }
-    &__paginat-list {
-        width: 268px;
-        height: 52px;
-        @include flexSpaceBetween;
-    }
-    &__paginat-link {
-        width: 53px;
-        height: 52px;
-        background: none;
-    }
-
-}
 .title-blog {
     margin: 0 0 30px 0;
     text-align: left;
