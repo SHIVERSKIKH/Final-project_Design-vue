@@ -131,7 +131,7 @@
                                     <h3 class="news__info-title" v-html="item.description"></h3>
                                     <div class="news__info-container">
                                         <p class="news__info-txt">{{ item.data}}</p>
-                                        <a v-html="item.link" href="blog_details.html" class="news__info-btn">
+                                        <a v-html="item.link" href="/blogDetails" class="news__info-btn">
                                             </a>
                                     </div>
                                 </div>

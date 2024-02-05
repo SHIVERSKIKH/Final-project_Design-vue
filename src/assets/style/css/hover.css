@@ -28,16 +28,21 @@ a, button {
     .news__info-item:hover circle {
         fill:white;
     }
-    .news__paginat-link svg:hover {
+    .paginat__link svg:hover {
         fill: #F4F0EC;
         stroke: none;
     }
-    .news__paginat-link circle:hover {
+    .paginat__link circle:hover {
         stroke: none;
     }
     .tags__button:hover {
         background: #292F36;
         color: #ffff;
+    }
+    .info__tags-btn:hover {
+        border-radius: 18px;
+        background: rgb(205, 162, 116);
+        color: rgb(255, 255, 255);
     }
     .footer__menu-link:hover, .footer__contact-link:hover {
         color: #CDA274;

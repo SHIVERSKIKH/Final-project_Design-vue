@@ -28,13 +28,13 @@
                         <h3 class="footer__menu-title">Pages</h3>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link">Home</a>
+                        <a href="/" class="footer__menu-link">Home</a>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link">Project</a>
+                        <a href="/project" class="footer__menu-link">Project</a>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="blog.html" class="footer__menu-link">Blog</a>
+                        <a href="/blog" class="footer__menu-link">Blog</a>
                     </li>
                 </ul>
             </div>
