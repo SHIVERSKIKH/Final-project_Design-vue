@@ -28,6 +28,9 @@ a, button {
     .news__info-item:hover circle {
         fill:white;
     }
+    .info__advantages-images:hover {
+        cursor: pointer;
+    }
     .paginat__link svg:hover {
         fill: #F4F0EC;
         stroke: none;

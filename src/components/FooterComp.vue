@@ -50,7 +50,7 @@
                         <a href="mailto:contact@interno.com" class="footer__contact-link">contact@interno.com</a>
                     </li>
                     <li class="footer__contact-item">
-                        <a href="tel:(123) 456 - 7890" class="footer__contact-link">(123) 456 - 7890</a>
+                        <a href="tel:(123)456-7890" class="footer__contact-link">(123) 456 - 7890</a>
                     </li>
                 </ul>
             </div>

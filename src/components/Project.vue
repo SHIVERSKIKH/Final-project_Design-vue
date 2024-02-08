@@ -19,8 +19,9 @@
                     </div>
                     <div class="info__advantages-wrapper">
                             <article class="info__advantages-item" v-for="div in filteredDivs" :key="div.id">
-                            <div class="info__advantages-images">
+                            <div class="info__advantages-images" @click="addFavorite(div)">
                                 <img class="info__images" :src="div.image" alt="images">
+                                <span v-if="div.snowStar" class="info__star"></span>    
                             </div>
                             <div class="info__advantages-wrp">
                                 <div>
@@ -32,7 +33,6 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
                     </div>
                     <div class="paginat">
                     <ul class="paginat__list">
@@ -71,6 +71,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
             </main>
         <FooterComp />
 </template>
@@ -94,6 +95,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:2,
@@ -104,6 +106,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:3,
@@ -114,6 +117,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:4,
@@ -124,6 +128,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:5,
@@ -134,6 +139,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:6,
@@ -144,6 +150,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:7,
@@ -154,6 +161,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:8,
@@ -164,6 +172,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 ]
                },
@@ -179,6 +188,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:2,
@@ -189,6 +199,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:3,
@@ -199,6 +210,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:4,
@@ -209,6 +221,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:5,
@@ -219,6 +232,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:6,
@@ -229,6 +243,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:7,
@@ -239,6 +254,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:8,
@@ -249,6 +265,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 ]
                },
@@ -264,6 +281,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:2,
@@ -274,6 +292,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:3,
@@ -284,6 +303,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:4,
@@ -294,6 +314,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:5,
@@ -304,6 +325,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:6,
@@ -314,6 +336,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:7,
@@ -324,6 +347,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 ]
                },
@@ -339,6 +363,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                                      snowStar: false,
                 },
                 {
                     id:2,
@@ -349,6 +374,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:3,
@@ -359,6 +385,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:4,
@@ -369,6 +396,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 {
                     id:5,
@@ -379,6 +407,7 @@ import FooterComp from './FooterComp.vue';
                                         <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>`,
+                    snowStar: false,
                 },
                 ]
                },
@@ -397,9 +426,16 @@ import FooterComp from './FooterComp.vue';
     methods: {
         changeTab(tab) {
             this.currentTab = tab;
+        },
+        addFavorite(selectedDiv) {
+      this.filteredDivs.forEach(div => {
+        if (div === selectedDiv) {
+          div.snowStar = !div.snowStar;
         }
+      });
         },
     }
+}
 </script>
 
 <style lang="scss" scoped>
