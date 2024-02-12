@@ -1,7 +1,7 @@
 @import "../css/hover.css";
 @import "../css/normalize.css";
 @import "../css/nulling-styles.css";
-.project__info-title, .design__sprint-title, .design__title, .post__title, .blog__info-title, .news__title, .product__title {
+.projectDetails__info-title, .project__info-title, .design__sprint-title, .design__title, .post__title, .blog__info-title, .news__title, .product__title {
   color: #292F36;
   text-align: center;
   font-family: DM Serif Display;
@@ -644,6 +644,37 @@
   color: rgb(255, 255, 255);
 }
 
+.projectDetails {
+  padding: 356px 0 0;
+  background: url(@/assets/img/project_det.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.projectDetails__main {
+  padding: 200px 0 200px;
+}
+.projectDetails__info {
+  max-width: 658px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+.projectDetails__info-title {
+  text-align: left;
+  margin: 0 0 11px 0;
+}
+.projectDetails__info-txt {
+  max-width: 658px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.projectDetails__info-txt:not(:last-child) {
+  margin: 0 0 45px 0;
+}
+
 body {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -750,6 +781,39 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.swiper-zoom-container {
+  position: relative;
+}
+.swiper-zoom-container img {
+  border-radius: 70px;
+}
+
+.swiper-zoom {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  background: url(../../img/Zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin: 17px 0 0 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+  border: 2px solid black;
+  background: white !important;
 }
 
 .footer {

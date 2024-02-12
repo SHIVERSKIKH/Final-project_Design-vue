@@ -6,6 +6,7 @@
 @import "_blogPages";
 @import "_blogDetails";
 @import "_project";
+@import "_projectDetails";
 
 
 body {
@@ -99,7 +100,32 @@ body {
     background: url(../../img/Logo.png);
     @include backgroundCenterContain;
 }
-
+.swiper-zoom-container {
+    position: relative;
+    img {
+        border-radius: 70px;
+    }
+}
+.swiper-zoom {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    background: url(../../img/Zoom.png);
+    @include backgroundCenterContain;
+}
+.swiper-pagination  {
+    position: relative!important;
+    margin: 17px 0 0 0;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0!important;
+}
+.swiper-pagination-bullet {
+    width: 13px!important;
+    height: 13px!important;
+    border: 2px solid black;
+    background: white!important;
+}
 .footer {
     padding:0  0 134px 0;
     &__wrp {

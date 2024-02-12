@@ -29,7 +29,7 @@
                                     <p class="info__advantages-wrp_txt">{{ div.title }}</p>
                                 </div>
                                 <div class="info__advantages-wrp_btn">
-                                    <a v-html="div.link" class="info__advantages-wrp_link" href="#"></a>
+                                    <a v-html="div.link" class="info__advantages-wrp_link" href="/projectDetails"></a>
                                 </div>
                             </div>
                         </article>
