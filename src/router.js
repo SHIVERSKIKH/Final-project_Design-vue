@@ -3,6 +3,7 @@ import Main from './components/MainComp.vue';
 import Blog from './components/BlogComp.vue';
 import BlogDetails from './components/BlogDetailsComp.vue';
 import Project from './components/Project.vue';
+import ProjectDetails from './components/ProjectDetails.vue';
 
 const routes = [
   {
@@ -20,6 +21,10 @@ const routes = [
   {
     path: '/project',
     component: Project
+  },
+  {
+    path: '/projectDetails',
+    component: ProjectDetails
   },
  
 ];

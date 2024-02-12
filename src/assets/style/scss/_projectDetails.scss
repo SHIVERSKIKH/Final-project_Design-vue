@@ -1,0 +1,29 @@
+.projectDetails{
+    padding: 356px 0 0;
+    background: url(@/assets/img/project_det.jpg);
+    @include backgroundCenterCover;
+    &__main{
+        padding: 200px 0 200px;
+    }
+    &__info {
+        max-width: 658px;
+        width: 100%;
+        margin: 0 auto 100px;
+    }
+    &__info-title {
+        @extend %main-title;
+        text-align: left;
+        margin: 0 0 11px 0;
+    }
+    &__info-txt {
+        max-width: 658px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+    &__info-txt:not(:last-child) {
+        margin: 0 0 45px 0;
+    }
+}
