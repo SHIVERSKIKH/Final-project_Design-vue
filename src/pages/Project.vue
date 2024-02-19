@@ -1,5 +1,4 @@
 <template>
-        <HeaderComp />
         <div class="project">
                 <div class="project__info center">
                     <div class="project__info-wrp">
@@ -77,10 +76,9 @@
 </template>
 
 <script>
-import HeaderComp from './HeaderComp.vue';
-import FooterComp from './FooterComp.vue';
+import FooterComp from '../components/FooterComp.vue';
     export default {
-        components:{HeaderComp, FooterComp},
+        components:{FooterComp},
         data: () => ({
             projects: [
                {

@@ -3,7 +3,9 @@
         <footer class="footer">
         <div class="footer__wrp center">
             <div class="footer__info">
-                <div class="logo logo-footer"><a href="#" class="logo-link"></a></div>
+                <div class="logo logo-footer">
+                    <router-link to="/" class="logo-link"></router-link>
+                </div>
                 <p class="footer__info-txt">It&nbsp;is&nbsp;a&nbsp;long established fact that a&nbsp;reader will be&nbsp;distracted lookings.</p>
                 <div class="footer__social">
                     <ul class="footer__social-list">
@@ -28,13 +30,13 @@
                         <h3 class="footer__menu-title">Pages</h3>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="/" class="footer__menu-link">Home</a>
+                        <router-link to="/" class="footer__menu-link">Home</router-link>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="/project" class="footer__menu-link">Project</a>
+                        <router-link to="/project" class="footer__menu-link">Project</router-link>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="/blog" class="footer__menu-link">Blog</a>
+                        <router-link to="/blog" class="footer__menu-link">Blog</router-link>
                     </li>
                 </ul>
             </div>

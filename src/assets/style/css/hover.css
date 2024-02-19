@@ -11,11 +11,11 @@ a, button {
     .header__menu-link:active {
         color: #292F36;
     }
-    .header__btn:hover {
+    .btn-get:hover {
         background: #CDA274;
     }
 
-    .header__btn:hover .header__elem {
+    .btn-get:hover .get-elem {
         background: url(../../img/next-hover.svg);
         background-size: cover;
     }
@@ -38,6 +38,10 @@ a, button {
     .paginat__link circle:hover {
         stroke: none;
     }
+    .btn-paginat:hover {
+        background:#F4F0EC;
+        border:none;
+    }
     .tags__button:hover {
         background: #292F36;
         color: #ffff;
@@ -49,6 +53,9 @@ a, button {
     }
     .swiper-zoom:hover {
         cursor: pointer;
+    }
+    .post__info-link:hover {
+        background: url(../../img/strel-hover_.svg);
     }
     .footer__menu-link:hover, .footer__contact-link:hover {
         color: #CDA274;

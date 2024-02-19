@@ -1,10 +1,9 @@
 <template>
-    <HeaderComp />
     <section class="header__promo center">
             <div class="header__promo-wrp">
                     <h1 class="header__promo-title">Let Your Home Be&nbsp;Unique</h1>
                     <p class="header__promo-txt">There are many variations of&nbsp;the passages of&nbsp;lorem Ipsum fromavailable, majority.</p>
-                    <button class="header__btn">Get Started<span class="header__elem"></span></button>
+                    <button class="btn-get">Get Started<span class="get-elem"></span></button>
                 </div>
             </section>
     <main class="main">
@@ -146,10 +145,9 @@
 </template>
 
 <script>
-import FooterComp from './FooterComp.vue';
-import HeaderComp from './HeaderComp.vue'
+import FooterComp from '../components/FooterComp.vue';
 export default {
-    components:{HeaderComp, FooterComp},
+    components:{FooterComp},
     data: () => ({
   articles: [
     {
