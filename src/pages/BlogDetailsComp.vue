@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HeaderComp />
         <div class="blog-details">
         </div>
 
@@ -69,10 +68,9 @@
 </template>
 
 <script>
-import HeaderComp from './HeaderComp.vue';
-import FooterComp from './FooterComp.vue';
+import FooterComp from '../components/FooterComp.vue';
     export default {
-        components:{HeaderComp, FooterComp},
+        components:{FooterComp},
         data: () => ({
             articles: [
                 {

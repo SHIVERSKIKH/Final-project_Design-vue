@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HeaderComp />
         <div class="projectDetails">
             </div>
             <main class="projectDetails__main">
@@ -22,11 +21,10 @@
 
 <script>
 import { mapState } from 'vuex';
-import HeaderComp from './HeaderComp.vue';
-import FooterComp from './FooterComp.vue';
-import SliderComp from './SliderComp.vue';
+import FooterComp from '../components/FooterComp.vue';
+import SliderComp from '../components/SliderComp.vue';
     export default {
-        components:{HeaderComp, FooterComp, SliderComp},
+        components:{FooterComp, SliderComp},
         computed:{
             ...mapState(['data'])
         }

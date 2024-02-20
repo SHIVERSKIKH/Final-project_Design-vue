@@ -1,0 +1,44 @@
+.notFound {
+background: url(@/assets/img/Images404.png);
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 50%;
+    &__wrp {
+        display: flex;
+        gap: 81px;
+    }
+    &__container {
+        padding: 309px 0 309px 0;
+        max-width: 569px;
+        width: 100%;
+        min-height: 424px;
+    }
+    &__title {
+        max-width: 395px;
+        width: 100%;
+        color: rgb(205, 162, 116);
+        font-family: DM Serif Display;
+        font-size: 250px;
+        font-weight: 400;
+        line-height: 172px;
+        text-align: left;
+        margin: 0 0 15px 0;
+    }
+    &__txt {
+        max-width: 569px;
+        width: 100%;
+        min-height: 139px;
+        color: rgb(41, 47, 54);
+        font-family: DM Serif Display;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 1%;
+        text-align: left;
+        margin: 0 0 23px 0;
+    }
+    &__btn {
+        max-width: 253.14px;
+        width: 100%;
+    }
+}

@@ -3,7 +3,7 @@ import App from './App.vue';
 import '@/assets/style/scss/style.scss';
 import router from './router';
 import store from './store';
-// import Swiper JS
+
 import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';

@@ -1,23 +1,17 @@
 <template>
     <div id="app">
+      <HeaderComp />
     <router-view></router-view>
   </div>
-<!-- <MainComp />
-<BlogComp />
-<BlogDetailsComp /> -->
 </template>
 
 <script>
+import HeaderComp from './components/HeaderComp.vue'
 
-// import MainComp from './components/MainComp.vue';
-// import BlogComp from './components/BlogComp.vue';
-// import BlogDetailsComp from './components/BlogDetailsComp.vue';
 export default {
   name: 'App',
   components: {
-    // MainComp,
-    // BlogComp,
-    // BlogDetailsComp,
+    HeaderComp
   }
 }
 </script>
