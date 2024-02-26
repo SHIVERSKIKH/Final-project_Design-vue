@@ -885,6 +885,11 @@ body {
   justify-content: center;
 }
 
+.activeBtn {
+  background-color: F4F0EC;
+  border: none;
+}
+
 .footer {
   padding: 0 0 134px 0;
 }
