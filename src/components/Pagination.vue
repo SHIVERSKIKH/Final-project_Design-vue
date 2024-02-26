@@ -1,5 +1,5 @@
 <template>
-    <ul class="pagination">
+    <ul class="paginat__list">
   
       <!-- Visible Buttons Start -->
   
@@ -26,7 +26,9 @@
           @click="onClickNextPage"
           :disabled="isInLastPage"
         >
-          Next
+            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.55714 15L7.5 8.31429L1.55714 1.62857" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
         </button>
       </li>
     </ul>
@@ -61,13 +63,14 @@
       }
 
       // When on the last page
-      if (this.currentPage === this.totalPages) {
-        return this.totalPages - this.maxVisibleButtons;
-      }
-
-      // When inbetween
-      return this.currentPage - 1;
-    },
+      if (this.currentPage <= Math.floor(this.maxVisibleButtons / 2) + 1) {
+    return 1;
+  } else if (this.currentPage >= this.totalPages - Math.floor(this.maxVisibleButtons / 2)) {
+    return this.totalPages - this.maxVisibleButtons + 1;
+  } else {
+    return this.currentPage - Math.floor(this.maxVisibleButtons / 2);
+  }
+},
     pages() {
       const range = [];
 
